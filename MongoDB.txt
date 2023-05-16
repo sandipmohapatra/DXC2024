@@ -1,0 +1,185 @@
+Mongodb:-
+----------------
+Database :- Mysql,sqlserver,Oracle  -structured database (rows and columns)
+
+Mongodb,cacendra :- unstructured database.Data will be in form of document.
+*company which use it are *facebook,paytm,etc..
+
+1)mongodb is a cross-platform ,document oriented base,high performance,easy scalability.
+2)mongodb works on concept of collection and document.
+3)data is stored in key and value pair. 
+example :-document format,JSON
+name:'Koyel',
+email:'Koyel@gmail.com',
+username:'koyel',
+password:'1234'
+-------------------------------------------------------------------
+RDBMS			Mongodb
+-------------------------------------------------------------------
+Table			collection
+database			database
+Tuple/row		document
+column			field
+table join			embedded document
+PrimaryKey		default key_id provided by mongodb itself
+-------------------------------------------------------------------------------------------------------
+3)document :- it is a set of key-value pairs.
+4)collection is a group of mongodb document.
+----------------------------------------------------------------
+example of a collection
+-----------------------------------
+comment:
+[
+{
+user:"Koyel",
+message:"Good Morning",
+dateCreated: new Date(2018,15,1,12,20),
+like:120
+},
+{
+user:"Aritra",
+message:"Good Morning",
+dateCreated: new Date(2018,15,1,12,20),
+like:125
+}
+]
+---------------------------------------------------------------------------
+www.mongodb.org official website.
+---------------------------------------------------------------------------
+CREATE FOLDER :- C:\data\db
+---------------------------------------------------
+software link :- https://www.mongodb.com/try/download/community
+
+https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-5.0.9-signed.msi
+1)to view database
+show databases;
+show dbs;
+----------------------------------------------
+2)to create database and switch database
+use mphasisstudents;
+-------------------------------------------------------
+3)to show no of tables
+show tables;
+show collections;
+---------------------------------------------------------
+4)to see the database in which you are working
+db;
+------------------------------------------------------------
+5)to create table/collection
+db.createCollection('student');
+---------------------------------------------------------------
+6)to insert data into student
+db.student.insert({name:'Koyel',email:'Koyel@gmail.com',username:'koyel',password:'1234'});
+db.student.insert({name:'Arprit',email:'arpit@gmail.com',image:'5',vedio:'1'});
+--------------------------------------------------------------------------------------
+7)to view the rows/document
+db.student.find();
+--------------------------------------------------------
+8)to view the rows/document in a proper order
+db.student.find().pretty();
+---------------------------------------------------------
+9)to update the document
+db.student.update({email:'sunil@gmail.com'},{$set:{password:'sunil@1'}});
+----------------------------------------------------------------------
+10)to delete the document
+db.student.remove({username:'susmita'});
+----------------------------------------------------------------
+-------------------------------------------------------------------------------
+nosql(non structured)
+mongodb,cacendra,redix
+-------------------------------------------------------------
+sql(structured database)
+--------------
+oracle,mysql,sql server
+-------------------------------------------------------------------------------
+1)mogodb is a cross-platform,
+document oriented database
+high performance,easy scalability
+2)mongodb works on cencept of collection and document.
+-----------------------------------------------------------------------
+Rdbms			mongodb
+-----------------------------------------------------------------------
+database	 		database
+table			collection
+row			document
+table join			embedded document
+primary key		default key_id provided by mongodb
+
+------------------------------------------------------------------------
+document :-it is a set of key-value pairs.
+collection is a group of mongodb document.
+a single mogodb server has multiple databases.
+------------------------------------------------------------------------
+Data type
+---------------------
+1)String
+2)Integer
+3)Boolean
+4)array
+5)Object
+6)Symbol
+7)date
+8)Object ID
+9)Binarydata
+10)Regular expression
+--------------------------------------------------------------------------
+1)to view database
+---------------------------
+show databases
+show dbs;
+------------------------------------
+
+2)to create database
+use <databasename>
+-----------------------------------------
+3)to se number of tables present
+show collections;
+show tables;
+----------------------------------------------
+4)to see which database your are in
+db
+----------------------------------------------
+5)to create table/collection
+db.createCollection('student');
+------------------------------------------------
+6)to insert data into collection
+db.student.insert({name:'yamuna',email:'yamuna@gmail.com',username:'yamuna',password:1234});
+--------------------------------------------------------------
+7)to view the rows/document
+db.student.find();
+-------------------------------------------------------------
+8)to view it in proper order
+db.student.find().pretty();
+-----------------------------------------------------------------------------
+9)to update the document
+db.student.update({name:'yamuna'},{$set:{password:'12345'}});
+----------------------------------------------------------------
+10)to delete the document
+db.student.remove({name:'yamuna'});
+---------------------------------------------------------------
+11)to drop database
+switch into the same database
+db.dropDatabase();
+------------------------------------------------------
+12)to sort the documents
+
+db.COLLECTION_NAME.find().sort({KEY:1})
+ascending
+db.student.find().sort({name:1}).pretty();
+descending
+db.student.find().sort({name:-1}).pretty();
+-------
+ascending
+db.student.find().sort({address:1}).pretty();
+descending
+db.student.find().sort({address:-1}).pretty();
+-----------------------------------------------------------
+Limit :- to display limited records
+db.student.find().limit(1).pretty();
+db.student.find().limit(2).pretty();
+
+--------------------------------------------------------------
+13)to drop collection/table
+
+db.student.drop()
+--------------------------------------------------------------

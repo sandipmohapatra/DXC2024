@@ -1,0 +1,125 @@
+MySql
+----------------------
+To see the databases
+1)show databases;
+-----------------------------------------------------
+to create database
+2)create database cognizantstud;
+--------------------------------------------------------
+to goto the database
+3)use cognizantstud;
+-------------------------------------------------------
+to drop database
+4)drop database cognizantstud;
+-----------------------------------------------------------------------
+to create a table
+5)create table student1
+( studid int not null auto_increment,
+name varchar(30) not null,
+address varchar(30) not null,
+primary key(studid)
+);
+----------------------------------------------------------------------------------
+6)to insert record
+INSERT INTO student1(NAME,address) VALUES('sandip','bangalore');
+insert into student1 values(101,'tarun','chennei');
+-----------------------------------------------------------------------------------
+7)to view the records 
+select * from student;
+------------------------------------------------------------
+8)update the record
+update student set address='Bangalore' where name='tarun';
+--------------------------------------------------------------------------
+9)to create a view (view will not contain any data.it will contain only the query)
+create view stud as select studid,name from student;
+we can do insert,update and delete of the view it will reflect to the base table.
+-------------------------------------------------------------------------------
+10)to see all the tables and views
+show tables;
+----------------------------------------------------------------------
+11)where condition :-
+select * from student where name='tarun';
+-------------------------------------------------------------------------
+12)distinct :-(unique data will be displayed)
+select distinct address from student;
+-------------------------------------------------------------------------------
+13)order by:-
+select * from student order by name;
+select * from student order by name asc;
+select * from student order by name desc;
+--------------------------------------------------------------------------------
+14)group by
+select address, count(*) from student group by address;
+-----------------------------------------------------------------------------------
+15)aggregate function
+count(),sum(),avg(),min(),max(),first(),last()
+---------------------------------------------------------------------
+i)select count(*) from student;
+first record  :- select name from student limit 1;
+last record :-select name from student order by name desc limit 1;
+--------------------------------------------------------------------------------------------
+16)alter table:-
+alter table student add salary int not null;
+to add data to salary column :-
+update student set salary=45000 where studid=101;
+update student set salary=35000 where studid in (102,103,104);
+---------------------------------------------------------------------------------
+17)select sum(salary) from student;
+18)select avg(salary) from student;
+19)select min(salary) from student;
+20)select max(salary) from student;
+----------------------------------------------------------------------------------------------
+between and example:-
+21)select * from student where salary between 30000 and 46000;
+----------------------------------------------------------------------------------------------
+like % (wildcard)
+----------------------------------------------------------------------------
+22)select * from student where name like 'p%';(word starting with p will display)
+select * from student where name like '%r';(word ending with r will display)
+---------------------------------------------------------------------------
+23)truncate table:-
+it will delete all the data from the table.
+truncate table student;
+--------------------------------------------------------------------------- 
+24)drop table;
+it will delete the data as well as the table also.
+drop table student;
+-------------------------------------------------------------------------------
+
+25)join
+------------------------
+create table marks
+(studid int(4),
+phy int(4),
+chem int(4),
+maths int(4),
+tot int(4),avg int(4));
+
+i)insert into marks(studid,phy,chem,maths) values(101,56,67,78);
+ii)update marks set tot=(phy+chem+maths) where studid in (101,102,103);
+iii)update marks set avg=tot/3 where studid in (101,102,103);
+--------------------------------------
+
+joining 2 tables:-
+---------------------------
+select a.studid,a.name,a.address,a.salary,b.phy,b.chem,b.maths,b.tot,b.avg from student a,marks b where a.studid=b.studid;
+---------------------------------
+composite KEY
+--------------------------------
+CREATE TABLE mphasisstudents
+( studid INT NOT NULL AUTO_INCREMENT,
+NAME VARCHAR(30) NOT NULL,
+address VARCHAR(30) NOT NULL,
+location VARCHAR(30) NOT NULL,
+PRIMARY KEY(studid,NAME)
+);
+
+----------------------------------------------------------------------------------------
+CREATE TABLE mphasisstudent
+( studid INT NOT NULL AUTO_INCREMENT,
+NAME VARCHAR(30) DEFAULT NULL UNIQUE,
+address VARCHAR(30) DEFAULT NULL,
+location VARCHAR(30) DEFAULT NULL,
+PRIMARY KEY(studid,NAME)
+);
+-----------------------------------------------------------------

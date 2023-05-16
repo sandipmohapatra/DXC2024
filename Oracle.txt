@@ -1,0 +1,24 @@
+Oracle :-structured database
+MySql:-structured database
+MongoDB:-non-structured database
+----------------------------------------------------
+creating table
+create table wipro69(rollno number,name varchar2(30),address varchar2(30));
+-------------------------------------------------------------------------------------------------------
+inserting data
+insert into wipro69 values(102,'anil','Hydrabad');
+---------------------------------------------------------------------------------------------------------
+to view the table
+select * from wipro69;
+--------------------------------------------------------------------------------------
+to add a column to the table
+alter table wipro69 add phoneno number;
+-------------------------------------------------------------------------------------------------
+add data to the column
+update wipro69 set phoneno=9988779955 where rollno=102;
+-----------------------------------------------------------------------------------------------
+delete data from the table
+delete from wipro69 where rollno=101;
+---------------------------------------------------------------------------------------
+mongo db
+---------------------
