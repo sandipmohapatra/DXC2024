@@ -1,0 +1,117 @@
+What is AWS?
+AWS stands for Amazon Web Services.
+The AWS service is provided by the Amazon that uses distributed IT infrastructure to provide different IT resources available on demand. It provides different services such as infrastructure as a service (IaaS), platform as a service (PaaS) and packaged software as a service (SaaS).
+Amazon launched AWS, a cloud computing platform to allow the different organizations to take advantage of reliable IT infrastructure.
+
+Pay-As-You-Go
+Based on the concept of Pay-As-You-Go, AWS provides the services to the customers.
+AWS provides services to customers when required without any prior commitment or upfront investment. Pay-As-You-Go enables the customers to procure services from AWS.
+Computing,Programming models,Database storage,Networking
+---------------------------------------
+Advantages of AWS
+---------------------------------------
+1) Flexibility
+We can get more time for core business tasks due to the instant availability of new features and services in AWS.
+2) Cost-effectiveness
+AWS requires no upfront investment, long-term commitment, and minimum expense when compared to traditional IT infrastructure that requires a huge investment.
+3) Scalability/Elasticity
+Through AWS, autoscaling and elastic load balancing techniques are automatically scaled up or down, when demand increases or decreases respectively. AWS techniques are ideal for handling unpredictable or very high loads. Due to this reason, organizations enjoy the benefits of reduced cost and increased user satisfaction.
+4) Security
+AWS provides end-to-end security and privacy to customers.
+AWS has a virtual infrastructure that offers optimum availability while managing full privacy and isolation of their operations.
+---------------------------------------------------------------------------------------------------------
+IAM stands for Identity Access Management.
+---------------------------------------------------------------------------------
+IAM allows you to manage users and their level of access to the aws console.
+It is used to set users, permissions and roles. It allows you to grant access to the different parts of the aws platform.
+AWS Identity and Access Management is a web service that enables Amazon Web Services (AWS) customers to manage users and user permissions in AWS.
+With IAM, Organizations can centrally manage users, security credentials such as access keys, and permissions that control which AWS resources users can access.
+Without IAM, Organizations with multiple users must either create multiple user accounts, each with its own billing and subscriptions to AWS products or share an account with a single security credential. Without IAM, you also don't have control about the tasks that the users can do.
+---------------------------------------------------------------------------------------------------------------
+S3-101
+S3 is one of the first services that has been produced by aws.
+S3 stands for Simple Storage Service.
+S3 provides developers and IT teams with secure, durable, highly scalable object storage.
+It is easy to use with a simple web services interface to store and retrieve any amount of data from anywhere on the web.
+------------------------------------------------------------
+What is S3?
+S3 is a safe place to store the files.
+It is Object-based storage, i.e., you can store the images, word files, pdf files, etc.
+The files which are stored in S3 can be from 0 Bytes to 5 TB.
+It has unlimited storage means that you can store the data as much you want.
+Files are stored in Bucket. A bucket is like a folder available in S3 that stores the files.
+S3 is a universal namespace, i.e., the names must be unique globally. Bucket contains a DNS address. Therefore, the bucket must contain a unique name to generate a unique DNS address.
+---------------------------------------------------------------------------------------------------------
+EC2
+EC2 stands for Amazon Elastic Compute Cloud.
+Amazon EC2 is a web service that provides resizable compute capacity in the cloud.
+Amazon EC2 changes the economics of computing by allowing you to pay only for the resources that you actually use. Rather than you previously buy physical servers, you would look for a server that has more CPU capacity, RAM capacity and you buy a server over 5 year term, so you have to plan for 5 years in advance. People spend a lot of capital in such investments. EC2 allows you to pay for the capacity that you actually use.
+------------------------------------------------------------------------------------------------------------
+EC2 Pricing Options
+AWS EC2---On Demand
+It allows you to pay a fixed rate by the hour or even by the second with no commitment.
+Linux instance is by the second and windows instance is by the hour.
+On Demand is perfect for the users who want low cost and flexibility of Amazon EC2 without any up-front investment or long-term commitment.
+It is suitable for the applications with short term or unpredictable workloads that cannot be interrupted.
+------------------------------------------------------------------------------------------------------------
+What is Load Balancer?
+Load Balancer is a virtual machine or appliance that balances your web application load that could be Http or Https traffic that you are getting in. It balances a load of multiple web servers so that no web server gets over loaded.
+------------------------------------------------------------------------------------------------
+Snowball
+Import/Export Disk
+It accelerates moving large amounts of data into and out of the AWS cloud using portable storage devices for transport.
+For example, if you have 500 TB data and you got a slow internet connection, i.e., 1mbps. Instead of sending the data over the internet, you can send it to Amazon through an external hard disk, and they would transfer your data directly onto and off of storage devices using Amazon's high-speed internal network and bypassing an internet.
+--------------------------------------------------------------------------------------------------------------
+Lambda: 
+You do not have to take care of managing Data centre, managing infrastructure as a service, managing platform as a service or container. You need to upload the code and Amazon will do everything for you.
+
+Lambda is used to encapsulate Data centres, Hardware, Assembly code/Protocols, high-level languages, operating systems, AWS APIs.
+Lambda is a compute service where you can upload your code and create the Lambda function.
+Lambda takes care of provisioning and managing the servers used to run the code.
+While using Lambda, you don't have to worry about scaling, operating systems, etc.
+--------------------------------------------------------------------------------------------------------------------------
+DynamoDB
+Amazon DynamoDB is a fast and flexible NoSQL database service for all applications that require consistent single-digit millisecond latency at any scale.
+It is a fully managed database that supports both document and key-value data models.
+Its flexible data model and performance makes it a great fit for mobile, web, gaming, ad-tech, IOT, and many other applications.
+--------------------------------------------------------------------------------------------------------------
+VPC
+VPC stands for Virtual Private Cloud.
+Amazon Virtual Private Cloud (Amazon VPC) provides a logically isolated area of the AWS cloud where you can launch AWS resources in a virtual network that you define.
+You have complete control over your virtual networking environment, including a selection of your IP address range, the creation of subnets, and configuration of route tables and network gateways.
+You can easily customize the network configuration for your Amazon Virtual Private Cloud. For example, you can create a public-facing subnet for web servers that can access to the internet and can also place your backend system such as databases or application servers to a private-facing subnet.
+You can provide multiple layers of security, including security groups and network access control lists, to help control access to Amazon EC2 instances in each subnet.
+-------------------------------------------------------------------------------------------------
+EBS
+EBS stands for Elastic Block Store.
+EC2 is a virtual server in a cloud while EBS is a virtual disk in a cloud.
+Amazon EBS allows you to create storage volumes and attach them to the EC2 instances.
+Once the storage volume is created, you can create a file system on the top of these volumes, and then you can run a database, store the files, applications or you can even use them as a block device in some other way.
+Amazon EBS volumes are placed in a specific availability zone, and they are automatically replicated to protect you from the failure of a single component.
+EBS volume does not exist on one disk, it spreads across the Availability Zone. EBS volume is a disk which is attached to an EC2 instance.
+EBS volume attached to the EC2 instance where windows or Linux is installed known as Root device of volume.
+----------------------------------------------------------------------------------------------------------
+Virtualization(AWS)
+-------------------------
+It enables multiple os to run on a physical machine.
+
+windows machine/ubuntu/unix
+
+cloud computing :- we will create linux machine,windows machine,
+
+Dev ops:-
+windows 
+linux
+
+1)Server Consolidation:- It allows multiple virtual servers to be created on a single physical server.
+2)Development and Testing:-image (docker),testing (jenkins),git 
+3)disaster Recovery:-replicas of the physical server
+4)Desktop virtualization:-employee can access their destops from any where or any place.
+5)Cloud Computing:-
+
+
+
+
+
+
+
