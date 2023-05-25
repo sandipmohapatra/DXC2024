@@ -1,0 +1,109 @@
+1)Which of the following is not a valid phase of SDLC (Software Development Life Cycle)?
+
+Testing Phase
+Requirement Phase
+Deployment phase
+Testing closure
+
+Answer: (d) Testing Closure
+
+2)Which of the following testing is also known as white-box testing?
+
+Structural testing
+Error guessing technique
+Design based testing
+None of the above
+
+Answer: (a) Structural Testing
+
+Explanation: Structural testing is also known as a White box or Clear box, or Glass box testing. In structural testing, we can understand what is happening inside the application or the software.
+
+3)Which of the following testing is related to the boundary value analysis?
+
+White box and black box testing
+White-box testing
+Black box testing
+None of the above
+Hide Answer Workspace
+Answer: (c) Black Box testing
+
+Explanation: Boundary value analysis is one of the widely used case design techniques for black-box testing. It is used to test boundary values because the input values near the boundary have higher chances of error. Boundary values are those that contain the upper and lower limit of a variable.
+
+4) Functional testing is a ------?
+
+Test design technique
+Test level
+SDLC Model
+Test type
+
+Answer: (d) Test Type
+
+Explanation: It is a type of software testing, which is used to verify the functionality of the software application, whether the function is working according to the requirement specification. It is performed as black-box testing, which verifies the functionality of the application.
+
+5)What are the different levels of Testing?
+
+Integration testing
+Unit testing
+System testing
+All of the above
+
+Answer: (d) All of the above
+
+Explanation: Integration, Unit and System testing are various testing levels where the Unit testing is used to test each unit or an individual component of the software application.
+
+The integration testing is used only after the functional testing is completed on each module of the application. And system testing is end-to-end testing, where the testing environment is similar to the production environment.
+
+6)Sanity testing is a ------?
+
+Test type
+Test Execution Level
+Test Level
+Test design technique
+
+Answer: (b) Test Execution level
+
+Explanation: As soon as the bug fixes are done, we will perform the Sanity testing. It is narrow, deep. Sanity testing's primary objective is to ensure that all the defects have been fixed and no further issues come into existence due to these changes.
+
+7)White box testing techniques are?
+
+Statement coverage testing
+Decision coverage testing
+Data flow testing
+All of the above
+
+Answer: (d) All of the above
+
+Explanation: In software testing, the statement coverage, decision coverage, data flow is part of the white-box testing technique.
+
+8)What is the key objective of Integration testing?
+
+Design Errors
+Interface Errors
+Procedure Errors
+None of the mentioned
+
+Answer: (b) Interface Error
+
+Explanation: Whenever there is a clear relationship between modules, we go for the integration testing. And the main purpose of the integration testing level is to expose the faults at the time of interaction between integrated components or units.
+
+9)Exploratory testing is a -----?
+
+Experience-based Test Design Technique
+White Box Test Design Technique
+Black Box Test Design Technique
+Grey Box Test Design Technique
+
+Answer: (a) Experience-based Test Design Technique
+
+Explanation: Whenever the requirement does not exist, we do one round of exploratory testing. In this testing, we will be exploring the application in all possible ways, understanding the application's flow, preparing a test document and then testing the application.
+
+10)Which of the following is not part of the Test type?
+
+Function testing
+System testing
+Statement testing
+Database testing
+
+Answer: (c) Statement testing
+
+Explanation: Testing is a group of techniques to determine the application's correctness under the predefined script, but testing cannot find all the defects in the application. Testing includes an examination of code and the execution of code in various environments, conditions, and all the examining aspects of the code.

@@ -1,0 +1,183 @@
+software testing
+----------------------------
+developed an application.
+application need to be tested.
+Before you give it to the client.
+satisfy the client requirement.
+it is working as expected.
+Two types of testing :-manual testing /automated testing
+-----------------------------------------
+why we need testing
+to prevent defect from the user end.
+to deliver quality of the product to the client.
+--------------------------------
+Objectives of testing
+-------------------------
+1)finding defectes
+2)gaining confidence
+3)to make sure that the end result meets the business requirement.
+4)satisfy the end user.
+----------------------
+Testing will done by the developers
+--------------------------------------
+coding
+1)unit testing :- to test the functions of appliaction
+2)integration testing:-developers will develop module by module.(login,registration,service,feedback)
+------------------------
+3)Company testers :-test cases,if error comes they will rise the ticket.(t1--10mins,t2--30mins,t3,t4,t5)
+*developers will solve the tickets.(errors)
+----------------------------------------------------------------
+4)UAT (user acceptence test)
+----------------------------------------------------------------
+Software testing Types (company testers)
+---------------------------------
+1)Black box testing ---less knowledge about the application to the testers.input/output.
+The testing is according to the function of the program.
+the main focus will be on the functionality.
+
+2)white box testing:-Testers will have the technical knowledge of the application.
+For this tester need to know the line by line of the code.
+----------------------------
+varification and validation
+-----------------------------------------
+
+varification:- evaluating the product.
+
+validation:-user validation.
+-------------------------------------------------------
+difference between verification and validation
+-----------------------------------------------------------
+1)verification is static whereas validations is dynamic
+2)verification takes place before validation.
+3)verification :- evaluates plans,document,req specification,inputs
+validation of product.
+
+--------------------------
+Branch Testing
+-----------------
+integration testing
+1)Top Down
+2)Buttom up
+---------------------------------------------
+system testing:-(ready after testing by the testers)
+-----------------------------
+1)smoke testing :- ready to go for further testing.
+2)Exploratory testing
+3)Compatibility testing :- os and browser
+4)Installation testing :- to check the s/w is installed or un-installed properly.
+5)un-installation testing
+6)Regression testing :-when new code is added 
+7)ad-hoc testing
+8)sanity testing :- it check that new added function/bugs are working properly.
+9)usability testing 
+10)Alpha testing
+11)Beta testing
+
+--------------------------
+UAT :- user acceptance test .tested by the client.
+alpha testing - it is tested in the UAT environment.(data will be dummy)
+beta testing -It is tested in the real time environment.(data will be real)
+
+---------------------
+non-functional testing :- performance testing
+
+1)load testing
+2)stress testing
+3)volume testing
+-----------------------------------------------
+Test cases
+------------------------
+login page
+Registion page
+----------------------
+excel sheet
+----------------------
+1)test case name
+2)sr no
+3)test step
+4)test data
+5)Expected result
+6)Actual result
+7)status
+8)comments
+9)Defect id
+10)Excuted by
+11)Exceution date
+-----------------------------------------------------------------------------
+HP:-
+quick test professional 
+IBM:-
+Rational robot
+Microsoft:-Coded UI
+Load runner
+Jmeter
+-----------------------------------------------------------------------------
+Data Scince
+-------------------------
+Hadoop
+collection of huge amount of data.
+it is known as raw data,structured format,un-structured format.tera data .
+main purpose is to make it a meanful data.
+
+Algorithms.
+
+graphs :- python
+--------------
+Machine Leaning Algo
+------------------------------------------
+1)Regression
+2)Decision tree
+3)clustering
+4)Neural network
+5)principal component analysis
+6)K-means 
+
+-------------------------------------------------------------------------
+Data Analysis
+-----------------------------
+
+1)predictive data analysis
+2)causal data analysis
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
